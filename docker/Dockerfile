@@ -37,7 +37,7 @@ FROM nginx
 
 COPY --from=builder /var/www/blog-admin/build /usr/share/nginx/html
 
-COPY /var/www/blog-admin/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /var/www/blog-admin/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3000
 
