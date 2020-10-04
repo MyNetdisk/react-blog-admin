@@ -5,7 +5,7 @@ const HOST = process.env.NODE_ENV
 if (HOST === 'development') {
   ipUrl = 'http://127.0.0.1:7001/admin/'
 } else if (HOST === 'production') {
-  ipUrl = 'http://47.105.40.202:7001/admin/'
+  ipUrl = 'https://api.mynetdisk.top/admin/'
 }
 const servicePath = {
   login: `${ipUrl}login`, // 登录接口
