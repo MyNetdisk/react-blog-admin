@@ -19,7 +19,7 @@ node {
             //定义镜像名称
             def imageName = "${project_name}:${tag}"
             //对镜像打上标签
-            sh "docker tag ${imageName} ${aliyun_url}/${aliyun_project}:${imageName}"
+            sh "docker tag ${imageName} ${aliyun_url}/${aliyun_project}/${imageName}"
         }
     }catch(e){
         throw e
